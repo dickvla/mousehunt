@@ -10,7 +10,7 @@
 <body>
     <header class="title-box">
         <div>
-        <h1>Mouse Hunting</h1>
+            <h1>Mouse Hunting</h1>
         </div>
         <div>
             <form action="">
@@ -22,6 +22,62 @@
             </form>
         </div>
     </header>
+
+    <!-- Game area -->
+    <section id="game-area" class="area">
+        <div class="desktop-layout">
+            <!-- Informative part -->
+            <div class="game-character-box">
+                <!-- Displayed character -->
+                <div id="game-area-character" role="img"></div>
+                <!-- Message -->
+                <div class="counts-parent">
+                    <div class="message-background">
+                        <p id="game-area-message" class="text"></p>
+                    </div>
+                    <!-- Score & Tries -->
+                    <div class="counts-box">
+                        <div>
+                            <h2 class="text">Score</h2>
+                            <p id="score" class="text count">0</p>
+                        </div>
+                        <div>
+                            <h2 class="text">Tries</h2>
+                            <p id="tries" class="text count">6</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Game field -->
+            <div class="game-field-background">
+                <div class="row">
+                    <div data-attr="0" class="object" role="img" aria-label="orange door"></div>
+                    <div data-attr="1" class="object" role="img" aria-label="orange door"></div>
+                    <div data-attr="2" class="object" role="img" aria-label="orange door"></div>
+                </div>
+                <div class="row">
+                    <div data-attr="3" class="object" role="img" aria-label="orange door"></div>
+                    <div data-attr="4" class="object" role="img" aria-label="orange door"></div>
+                    <div data-attr="5" class="object" role="img" aria-label="orange door"></div>
+                </div>
+                <div class="row">
+                    <div data-attr="6" class="object" role="img" aria-label="orange door"></div>
+                    <div data-attr="7" class="object" role="img" aria-label="orange door"></div>
+                    <div data-attr="8" class="object" role="img" aria-label="orange door"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Buttons -->
+        <div class="btn-container">
+            <div>
+                <button id="restart-game" class="btn">Restart</button>
+            </div>
+            <div>
+                <button id="exit-game" class="btn">Exit</button>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
